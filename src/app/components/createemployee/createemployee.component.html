@@ -1,0 +1,8 @@
+<h3>Add Employee</h3>
+<form (ngSubmit)="onSubmit()">
+   
+    <input type="text" [(ngModel)]="Name" autocomplete="off" name="Name" placeholder="Name">
+    <input type="text"    [(ngModel)]="Designation"     autocomplete="off" name="Designation" placeholder="Designation" >
+    <input type="text"      [(ngModel)]="Address"         autocomplete="off" name="Address" placeholder="Address" >
+    <input type="submit" value="Save" class="btn">
+</form>

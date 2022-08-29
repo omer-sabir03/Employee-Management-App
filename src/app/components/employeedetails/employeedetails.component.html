@@ -1,0 +1,9 @@
+<div>
+    <p>{{employee.Name}}</p>
+<p>{{employee.Designation}}  <span> <i  (click)="onDelete(employee)" [ngStyle]="{color:'red'}" class="fa-solid fa-xmark"></i> 
+    
+        <i [routerLink]="['/update',employee.id]" [ngStyle]="{color:'blue'}" class="fa-solid fa-pen-to-square" ></i>
+    </span></p>
+<p>{{employee.Address}} </p>
+</div>
+
