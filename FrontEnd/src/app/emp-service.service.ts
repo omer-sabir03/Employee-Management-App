@@ -33,8 +33,8 @@ export class EmpServiceService {
   const  Url=`${this.apiUrl}/${id}`
     return this.httpclient.get<empInterface>(Url)
  }
- updateemp(_id:any,data:any):Observable<empInterface>{
-  const  Url=`${this.apiUrl}/${_id}`;
+ updateemp(id:any,data:any):Observable<empInterface>{
+  const  Url=`${this.apiUrl}/${id}`;
     return   this.httpclient.put<empInterface>(Url,data)
  }
 
